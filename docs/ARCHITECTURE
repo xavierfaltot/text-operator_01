@@ -1,0 +1,224 @@
+# ARCHITECTURE
+
+TEXT OPERATOR is organized around a modular architecture.
+
+Each module performs a specific task while remaining independent from the others.
+
+---
+
+# System Overview
+
+```
+                USER
+
+                  │
+
+        ┌──────────────────┐
+        │     Interface     │
+        └──────────────────┘
+
+                  │
+
+        ┌──────────────────┐
+        │  Search Engine    │
+        └──────────────────┘
+
+                  │
+
+        ┌──────────────────┐
+        │ Semantic Engine   │
+        └──────────────────┘
+
+                  │
+
+        ┌──────────────────┐
+        │ Knowledge Library │
+        └──────────────────┘
+
+                  │
+
+        ┌──────────────────┐
+        │  File Storage     │
+        └──────────────────┘
+```
+
+---
+
+# Core Modules
+
+## Library
+
+Stores every imported document.
+
+Supported formats:
+
+- Markdown
+- PDF
+- EPUB
+- TXT
+- DOCX
+
+Responsibilities:
+
+- File management
+- Metadata
+- Collections
+- Projects
+
+---
+
+## Parser
+
+Converts raw documents into structured content.
+
+Responsibilities:
+
+- Text extraction
+- Chapter detection
+- Paragraph segmentation
+- Metadata extraction
+
+---
+
+## Semantic Engine
+
+Creates vector embeddings for every document.
+
+Responsibilities:
+
+- Embeddings
+- Similarity search
+- Related passages
+- Concept matching
+
+---
+
+## Search Engine
+
+Searches meaning instead of keywords.
+
+Supports:
+
+- Natural language
+- Keywords
+- Filters
+- Tags
+- Collections
+
+---
+
+## Composer
+
+Workspace for building new documents.
+
+Functions:
+
+- Notes
+- Quotes
+- Outline
+- Drafts
+- Export
+
+---
+
+## AI Assistant
+
+Provides contextual assistance.
+
+Capabilities:
+
+- Summaries
+- Explanations
+- Comparisons
+- Suggestions
+- Question answering
+
+Always references the original sources.
+
+---
+
+## Export Engine
+
+Produces final documents.
+
+Formats:
+
+- Markdown
+- PDF
+- DOCX
+
+---
+
+# Data Flow
+
+```
+Documents
+
+      │
+
+Import
+
+      │
+
+Parser
+
+      │
+
+Semantic Index
+
+      │
+
+Search
+
+      │
+
+Selection
+
+      │
+
+Composer
+
+      │
+
+Export
+```
+
+---
+
+# Future Modules
+
+- Knowledge Graph
+- OCR
+- Image Search
+- Audio Transcription
+- Citation Manager
+- Plugin System
+- Local AI Models
+- Cloud Synchronization
+
+---
+
+# Design Principles
+
+- Modular
+- Local-first
+- Search by meaning
+- Human-centered
+- Non-destructive
+- Extensible
+
+---
+
+# Product Family
+
+TEXT OPERATOR shares its architecture with the GOST OPERATOR ecosystem.
+
+Current products:
+
+- TEXT OPERATOR
+- RUSH OPERATOR
+- VIDZ OPERATOR
+- MIND OPERATOR
+- GVRT OPERATOR
+
+Each product builds on the same design philosophy while addressing a different creative workflow.
